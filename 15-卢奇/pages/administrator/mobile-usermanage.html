@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>课程评价系统-管理端</title>
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/frame_css.css">
+    <link rel="stylesheet" href="../../css/student/mobile-index.css">
+    <script type="text/javascript" src="../../js/frame_js.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="title_1">课程评价系统</span>
+            <a id="menu" href="../../mobile-login.html"><i class="fa fa-power-off" aria-hidden="true"></i></i></a>
+        </div>
+
+        <div class="page">
+            <div class="navigation">
+                <ul>
+                    <li class="navs"><a href="mobile-index.html">现有正在评价中的课程</a></li>
+                    <li class="navs" id="selected"><a href="mobile-usermanage.html">用户管理</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <table id="faculty">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>学院名称</th>
+                            <th>专业数</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <script>
+                        course_info = [
+                            ['大气科学学院', '2'],['资源环境学院', '5'],['网络空间安全学院', '4'],['软件工程学院', '3'], 
+                            ['计算机学院', '3'],['光电工程学院', '4'],['应用数学学院', '2'], ['控制工程学院', '5'],
+                            ['电子工程学院', '3'], ['通信工程学院', '2'],['外国语学院', '2']
+                        ];
+                    
+                        for(let i=0; i<course_info.length; i++){
+                            $('#faculty tbody').append('<tr>' + 
+                                '<td>' + (i+1) +'</td>' +
+                                '<td>' + course_info[i][0] +'</td>' +
+                                '<td>' + course_info[i][1] +'</td>' +
+                                '<td>' + '<a>进入该学院</a>' +'</td>' +
+                                + '<tr>'
+                            );
+                        }
+                        $("#faculty a").click(function(){
+                            $("#faculty").hide();
+                            $("#discipline").show();
+                        })
+                    </script>
+                </table>
+
+                <table id="discipline" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>专业名称</th>
+                            <th>班级数</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <script>
+                        course_info = [
+                            ['计算机科学与技术', '24'],['数字媒体技术', '6'],['智能科学与技术', '10']]
+                    
+                        for(let i=0; i<course_info.length; i++){
+                            $('#discipline tbody').append('<tr>' + 
+                                '<td>' + (i+1) +'</td>' +
+                                '<td>' + course_info[i][0] +'</td>' +
+                                '<td>' + course_info[i][1] +'</td>' +
+                                '<td>' + '<a>进入该专业</a>' +'</td>' +
+                                + '<tr>'
+                            );
+                        }
+                        $("#discipline a").click(function(){
+                            $("#discipline").hide();
+                            $("#class").show();
+                        })
+                    </script>
+                </table>
+
+                <table id="class" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>班级</th>
+                            <th>班级人数</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <script>
+                        course_info = [
+                            ['计算机科学与技术191', '43'],['计算机科学与技术192', '42'],
+                            ['计算机科学与技术193', '45'],['计算机科学与技术194', '40'],
+                            ['计算机科学与技术195', '43'],['计算机科学与技术196', '41'],
+                            ['计算机科学与技术197', '44'],['计算机科学与技术198', '42'],
+                            ['计算机科学与技术181', '43'],['计算机科学与技术182', '42'],
+                            ['计算机科学与技术183', '45'],['计算机科学与技术184', '40'],
+                            ['计算机科学与技术185', '43'],['计算机科学与技术186', '41'],
+                            ['计算机科学与技术187', '44'],['计算机科学与技术188', '42'],
+                            ['计算机科学与技术171', '43'],['计算机科学与技术172', '42'],
+                            ['计算机科学与技术173', '45'],['计算机科学与技术174', '40'],
+                            ['计算机科学与技术175', '43'],['计算机科学与技术176', '41'],
+                            ['计算机科学与技术177', '44'],['计算机科学与技术178', '42'],
+                        ]
+                    
+                        for(let i=0; i<course_info.length; i++){
+                            $('#class tbody').append('<tr>' + 
+                                '<td>' + (i+1) +'</td>' +
+                                '<td>' + course_info[i][0] +'</td>' +
+                                '<td>' + course_info[i][1] +'</td>' +
+                                '<td>' + '<a>进入该班级</a>' +'</td>' +
+                                + '<tr>'
+                            );
+                        }
+                        $("#class a").click(function(){
+                            $("#class").hide();
+                            $("#class_details").show();
+                        })
+                    </script>
+                </table>
+
+                <table id="class_details" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>学生姓名</th>
+                            <th>学号</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <script>
+                        course_info = ['张三', '李四', '王五', '张三', '李四', '王五', '张三', '李四', '王五', '张三', '李四', '王五',
+                        '张三', '李四', '王五', '张三', '李四', '王五', '张三', '李四', '王五', '张三', '李四', '王五',
+                        '张三', '李四', '王五', '张三', '李四', '王五', '张三', '李四', '王五', '张三', '李四', '王五',
+                        '张三', '李四', '王五', '张三', '李四', '王五', '张三', '李四', '王五', '张三', '李四', '王五']
+                    
+                        for(let i=0; i<course_info.length; i++){
+                            $('#class_details tbody').append('<tr>' + 
+                                '<td>' + (i+1) +'</td>' +
+                                '<td>' + course_info[i] +'</td>' +
+                                '<td>' + (2018051001+i) +'</td>' +
+                                '<td>' + "<a id='alter'>修改</a>&nbsp;<a id='delete'>删除</a>" +'</td>' +
+                                + '<tr>'
+                            );
+                        }
+                        $("#class_details #delete").click(function(){
+                            $(this).parent().parent().remove();
+                            alert('已删除');
+                        })
+                        $("#class_details #alter").click(function(){
+                            alert('已修改');
+                        })
+                    </script>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

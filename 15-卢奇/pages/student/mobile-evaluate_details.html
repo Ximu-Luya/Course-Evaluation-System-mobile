@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>课程评价系统-学生端</title>
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/frame_css.css">
+    <link rel="stylesheet" href="../../css/student/mobile-evaluate_details.css">
+    <script type="text/javascript" src="../../js/frame_js.js"></script>
+    <script type="text/javascript" src="../../js/student/mobile-evaluate_details.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="title_1">课程评价系统</span>
+            <a id="menu" href="../mobile-personalInfo.html"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="page">
+            <div class="navigation">
+                <ul>
+                    <li class="navs" id="selected"><a href="mobile-index.html">可评价的课程</a></li>
+                    <li class="navs"><a href="mobile-evaluated.html">评价过的课程</a></li>
+                    <li class="navs"><a href="mobile-questionnaire.html">学生学情问卷</a></li>
+                    <li class="navs"><a href="mobile-timetable.html">公共课表查询</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <div class="explanation">
+                    <a href="mobile-index.html" style="display: block;padding: 5px 10px;">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i> 返回课程列表
+                    </a>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="center" style="font-size: 1.25rem;font-weight: 600;">教学质量听课评价</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>评教说明：<br>
+                                    　　请同学们务必本着对自己、对教师、对学校高度负责的精神，实事求是地对任课教师的教学质量作出您客观、公正、严肃、慎重的评价。<br>
+                                    　　(1)学校需要客观、公正地了解每位任课教师的教学质量，学生评教是作为学校对教师教学质量进行监控与奖励的主要依据，也是提高学校教学质量的主要途径。<br>
+                                    　　(2)教师需要客观、公正地得到同学们的评价。客观、公正地评价教师既是对教师辛勤劳动的尊重与鼓励，更是进一步促进教师提高职业道德、教学水平和教学质量的重要手段。<br>
+                                    　　(3)学生是客观、公正评教的最终受益者。试设想，若将一位教学质量很好的教师评价很差，或者将一位教学质量很差的教师评价很高，其最终的受害者都将是学生。毫无疑问，
+                                            这样非客观、不公正的评教，既伤害了教师，破坏了学校为提高教学质量而做出的努力，也将将直接损害学生的根本利益！<br>
+                                    　　(4)仅当某门课程的评教结束、成绩上报教务处并入库后(标志是学生上网能查到该门课程之成绩)，任课教师才可能看到该门课程的评教得分。<br>
+                                    　　(5)系统设计将保证任何任课教师或工作人员，都无法知道每份评教表的具体打分学生。<br>
+                                    　　我们殷切希望全院同学珍惜您的权利！正确行使您的权利！
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <button type="button" id="start_evaluate">开始评教</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="details">
+                    <table>
+                        <thead><th colspan="3">成都信息工程大学教学质量听课评价表</th></thead>
+                        <tbody>
+                            <tr><td>开课时间</td><td colspan="2">第2018--2019学年 第2学期</td></tr>
+                            <tr><td>课程名称</td><td colspan="2">中国近现代史纲要</td></tr>
+                            <tr><td>班级</td><td colspan="2">计算机181</td></tr>
+                            <tr><td>主讲教师</td><td colspan="2">丁小珊</td></tr>
+                            <tr><th>指标序号</th><th colspan="2">具体指标及评价内容</th></tr>
+                            <tr>
+                                <th rowspan="6">1</th>
+                                <td colspan="2" class="details_content">授课教师（包含实践教学指导教师）总体教学表现</td>
+                                <tr><td colspan="2" class="1 options">A.良好</td></tr>
+                                <tr><td colspan="2" class="1 options">B.优秀</td></tr>
+                                <tr><td colspan="2" class="1 options">C.中</td></tr>
+                                <tr><td colspan="2" class="1 options">D.合格</td></tr>
+                                <tr><td colspan="2" class="1 options">E.不合格</td></tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

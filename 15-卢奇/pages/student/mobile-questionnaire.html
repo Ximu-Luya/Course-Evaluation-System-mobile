@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>课程评价系统-学生端</title>
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/frame_css.css">
+    <link rel="stylesheet" href="../../css/student/mobile-questionnaire.css">
+    <script type="text/javascript" src="../../js/frame_js.js"></script>
+    <script type="text/javascript" src="../../js/student/mobile-questionnaire.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="title_1">课程评价系统</span>
+            <a id="menu" href="../mobile-personalInfo.html"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="page">
+            <div class="navigation">
+                <ul>
+                    <li class="navs"><a href="mobile-index.html">可评价的课程</a></li>
+                    <li class="navs"><a href="mobile-evaluated.html">评价过的课程</a></li>
+                    <li class="navs" id="selected"><a href="mobile-questionnaire.html">学生学情问卷</a></li>
+                    <li class="navs"><a href="mobile-timetable.html">公共课表查询</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <div class="explanation">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="center" style="font-size: 1.25rem;font-weight: 600;">教学质量听课评价</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>亲爱的同学：<br>
+                                        　　为了更好地了解学校人才培养现状，学生学习状态，学生个人发展、就业愿望等信息，学校委托教师教学发展中心，从本学期开始开展学情跟踪问卷调查，问卷调查和每学期的学生评教同时进行,问卷内容每学期有一定的侧重。<br>
+                                        　　调查结果对于学校及时发现问题、总结经验以及制定相关政策具有重要参考价值。问卷中个人信息严格保密，调查结果采用匿名形式，不会对您产生任何影响，希望同学们据实填写各项内容。<br>
+                                        　　感谢您的参与，您的参与对学校的长远发展很重要。
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center">
+                                    <button type="button" id="start_fill">开始填写问卷</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="details">
+                    <table>
+                        <thead><th colspan="3">成都信息工程大学教学质量听课评价表</th></thead>
+                        <tbody>
+                            <tr><td>开课时间</td><td colspan="2">第2018--2019学年 第2学期</td></tr>
+                            <tr><td>课程名称</td><td colspan="2">学情跟踪调查问卷(第2学期)</td></tr>
+                            <tr><td>班级</td><td colspan="2">全校</td></tr>
+                            <tr><td>主讲教师</td><td colspan="2">学校教师教学发展中心</td></tr>
+                            <tr><th>指标序号</th><th colspan="2">具体指标及评价内容</th></tr>
+                            <tr>
+                                <th rowspan="6">1</th>
+                                <td colspan="2" class="details_content">您对学校的教学服务综合满意度？</td>
+                                <tr><td colspan="2" class="1 options">A.非常满意</td></tr>
+                                <tr><td colspan="2" class="1 options">B.满意</td></tr>
+                                <tr><td colspan="2" class="1 options">C.一般</td></tr>
+                                <tr><td colspan="2" class="1 options">D.不满意</td></tr>
+                                <tr><td colspan="2" class="1 options">E.非常不满意</td></tr>
+                            </tr>
+                            <tr>
+                                <th rowspan="6">2</th>
+                                <td colspan="2" class="details_content">您对所开展的专业教育是否满意？</td>
+                                <tr><td colspan="2" class="2 options">A.非常满意</td></tr>
+                                <tr><td colspan="2" class="2 options">B.满意</td></tr>
+                                <tr><td colspan="2" class="2 options">C.一般</td></tr>
+                                <tr><td colspan="2" class="2 options">D.不满意</td></tr>
+                                <tr><td colspan="2" class="2 options">E.非常不满意</td></tr>
+                            </tr>
+                            <tr>
+                                <th rowspan="6">3</th>
+                                <td colspan="2" class="details_content">您是否想过要换专业学习？</td>
+                                <tr><td colspan="2" class="3 options">A.我喜欢现在的专业，不想转专业</td></tr>
+                                <tr><td colspan="2" class="3 options">B.专业对我来说都差不多</td></tr>
+                                <tr><td colspan="2" class="3 options">C.想转专业但不知道如何申请</td></tr>
+                                <tr><td colspan="2" class="3 options">D.想转专业但不符合条件</td></tr>
+                                <tr><td colspan="2" class="3 options">E.已经或正在申请转专业</td></tr>
+                            </tr>
+                            <tr>
+                                <th rowspan="6">4</th>
+                                <td colspan="2" class="details_content">如果您遇到压力或困扰，最先向谁求助？</td>
+                                <tr><td colspan="2" class="4 options">A.家人或知己</td></tr>
+                                <tr><td colspan="2" class="4 options">B.恋人</td></tr>
+                                <tr><td colspan="2" class="4 options">C.辅导员或任课教师</td></tr>
+                                <tr><td colspan="2" class="4 options">D.学校心理咨询老师</td></tr>
+                                <tr><td colspan="2" class="4 options">E.其他</td></tr>
+                            </tr>
+                            <tr>
+                                <th rowspan="6">5</th>
+                                <td colspan="2" class="details_content">您现在的学习状况属于以下哪一种？</td>
+                                <tr><td colspan="2" class="5 options">A.一直保持良好的学习习惯	</td></tr>
+                                <tr><td colspan="2" class="5 options">B.基本能保持良好的学习习惯</td></tr>
+                                <tr><td colspan="2" class="5 options">C.周围同学都努力，所以不得不学</td></tr>
+                                <tr><td colspan="2" class="5 options">D.想努力学习，但不能落实到行动上</td></tr>
+                                <tr><td colspan="2" class="5 options">E.无所谓，只要不是太差就行</td></tr>
+                            </tr>
+                            <tr>
+                                <th rowspan="6">6</th>
+                                <td colspan="2" class="details_content">您是否有课前预习和课后复习习惯？</td>
+                                <tr><td colspan="2" class="6 options">A.所有课程均会坚持预习和复习</td></tr>
+                                <tr><td colspan="2" class="6 options">B.重要课程会坚持预习和复习</td></tr>
+                                <tr><td colspan="2" class="6 options">C.很少预习，做作业需要时才会复习</td></tr>
+                                <tr><td colspan="2" class="6 options">D.偶尔进行预习和复习，考试时才集中复习</td></tr>
+                                <tr><td colspan="2" class="6 options">E.从不预习和复习</td></tr>
+                            </tr>
+                            <tr>
+                                <th rowspan="6">7</th>
+                                <td colspan="2" class="details_content">您的课程作业完成情况？</td>
+                                <tr><td colspan="2" class="7 options">A.认真独立完成作业</td></tr>
+                                <tr><td colspan="2" class="7 options">B.基本能够独立完成作业</td></tr>
+                                <tr><td colspan="2" class="7 options">C.自己做与借鉴同学作业结合</td></tr>
+                                <tr><td colspan="2" class="7 options">D.经常借鉴同学作业</td></tr>
+                                <tr><td colspan="2" class="7 options">E.基本不交作业</td></tr>
+                            </tr>
+                            <tr>
+                                <th rowspan="6">8</th>
+                                <td colspan="2" class="details_content">您课外去图书馆、自习室学习情况？</td>
+                                <tr><td colspan="2" class="8 options">A.总是</td></tr>
+                                <tr><td colspan="2" class="8 options">B.经常</td></tr>
+                                <tr><td colspan="2" class="8 options">C.偶尔</td></tr>
+                                <tr><td colspan="2" class="8 options">D.几乎不</td></tr>
+                                <tr><td colspan="2" class="8 options">E.从不</td></tr>
+                            </tr>
+                            <tr>
+                                <th rowspan="6">9</th>
+                                <td colspan="2" class="details_content">您对大学期间课程学习的期望是？</td>
+                                <tr><td colspan="2" class="9 options">A.课程成绩一定要达到优秀</td></tr>
+                                <tr><td colspan="2" class="9 options">B.中游水平就行</td></tr>
+                                <tr><td colspan="2" class="9 options">C.及格就行</td></tr>
+                                <tr><td colspan="2" class="9 options">D.不关注成绩，只要学到东西就行</td></tr>
+                                <tr><td colspan="2" class="9 options">E.成绩多少都无所谓</td></tr>
+                            </tr>
+                            <tr>
+                                <th rowspan="6">10</th>
+                                <td colspan="2" class="details_content">您对本学期的学习效果是否满意？</td>
+                                <tr><td colspan="2" class="10 options">A.非常满意</td></tr>
+                                <tr><td colspan="2" class="10 options">B.满意</td></tr>
+                                <tr><td colspan="2" class="10 options">C.一般</td></tr>
+                                <tr><td colspan="2" class="10 options">D.不满意</td></tr>
+                                <tr><td colspan="2" class="10 options">E.非常不满意</td></tr>
+                            </tr>
+                            <tr><td colspan="3" class="center"><button type="button" id="save_fill">提交问卷</button></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

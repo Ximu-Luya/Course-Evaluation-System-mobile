@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>课程评价系统-管理端</title>
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/frame_css.css">
+    <link rel="stylesheet" href="../../css/student/mobile-index.css">
+    <script type="text/javascript" src="../../js/frame_js.js"></script>
+    <style>
+        td{
+            border-width: .1rem;
+            border-style: solid;
+            border-color: rgb(128, 102, 160);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="title_1">课程评价系统</span>
+            <a id="menu" href="../../mobile-login.html"><i class="fa fa-power-off" aria-hidden="true"></i></i></a>
+        </div>
+
+        <div class="page">
+            <div class="navigation">
+                <ul>
+                    <li class="navs" id="selected"><a href="mobile-index.html">现有正在评价中的课程</a></li>
+                    <li class="navs"><a href="mobile-usermanage.html">用户管理</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <a href="mobile-index.html" style="display: block;padding: 5px 10px;">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i> 返回学院列表
+                </a>
+                <table>
+                    <thead>
+                        <tr><th>课程名称</th><th colspan="2">中国近现代史纲要</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>开课时间</td><td colspan="2">第2018--2019学年 第2学期</td></tr>
+                        <tr><td>主讲教师</td><td colspan="2">丁小珊</td></tr>
+                        <tr><td>授课方式</td><td colspan="2">线下教学</td></tr>
+                        <tr>
+                            <td rowspan="8">教学班</td>
+                            <tr><td colspan="2" style="font-weight: 600;">点击查看各教学班详细情况</td></tr>
+                            <tr><td colspan="2"><a href="">计科181/182</a></td></tr>
+                            <tr><td colspan="2"><a href="">计科183/184</a></td></tr>
+                            <tr><td colspan="2"><a href="">计科185/186</a></td></tr>
+                            <tr><td colspan="2"><a href="">计科187/188</a></td></tr>
+                            <tr><td colspan="2"><a href="">数媒181/182</a></td></tr>
+                            <tr><td colspan="2"><a href="">数媒183/184</a></td></tr>
+                            <script>
+                                $('table a').click(function(){
+                                    alert('查看了该班详细评教情况')
+                                })
+                            </script>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

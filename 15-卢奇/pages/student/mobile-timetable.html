@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>课程评价系统-学生端</title>
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/frame_css.css">
+    <link rel="stylesheet" href="../../css/student/mobile-timetable.css">
+    <script type="text/javascript" src="../../js/frame_js.js"></script>
+    <script type="text/javascript" src="../../js/student/mobile-timetable.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="title_1">课程评价系统</span>
+            <a id="menu" href="../mobile-personalInfo.html"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="page">
+            <div class="navigation">
+                <ul>
+                    <li class="navs"><a href="mobile-index.html">可评价的课程</a></li>
+                    <li class="navs"><a href="mobile-evaluated.html">评价过的课程</a></li>
+                    <li class="navs"><a href="mobile-questionnaire.html">学生学情问卷</a></li>
+                    <li class="navs" id="selected"><a href="mobile-timetable.html">公共课表查询</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <table width="100%" id="manualArrangeCourseTable" align="center" class="gridtable" style="text-align:center" border="1">
+                <thead>
+                <tr>
+                    <th style="background-color:#DEEDF7;" height="10px" width="80px">节次/周次
+                    </th><th style="background-color:#DEEDF7;">
+                        <font size="2px">星期一</font>
+                  </th>
+                    <th style="background-color:#DEEDF7;">
+                        <font size="2px">星期二</font>
+                  </th>
+                    <th style="background-color:#DEEDF7;">
+                        <font size="2px">星期三</font>
+                  </th>
+                    <th style="background-color:#DEEDF7;">
+                        <font size="2px">星期四</font>
+                  </th>
+                    <th style="background-color:#DEEDF7;">
+                        <font size="2px">星期五</font>
+                  </th>
+                    <th style="background-color:#DEEDF7;">
+                        <font size="2px">星期六</font>
+                  </th>
+                    <th style="background-color:#DEEDF7;">
+                        <font size="2px">星期日</font>
+                  </th>
+                </tr>
+                </thead>
+                <tbody><tr>
+                    <td style="background-color:rgb(238, 255, 0)">
+                      <font size="2px"> 第一节</font>
+                  </td>
+                    <td id="TD0_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="云计算导论 ;教师：王铁军;周次： 9-14周;教室：H2103">云计算导论 <br>教师：王铁军<br>周次： 9-14周<br>教室：H2103</td>
+                    <td id="TD11_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD22_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD33_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD44_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="大学英语4A ;教师：杨艳;周次： 1-16周;教室：H4311">大学英语4A <br>教师：杨艳<br>周次： 1-16周<br>教室：H4311</td>
+                    <td id="TD55_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD66_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgb(238, 255, 0)">
+                      <font size="2px"> 第二节</font>
+                  </td>
+                    
+                    <td id="TD12_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD23_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD34_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    
+                    <td id="TD56_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD67_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgb(238, 255, 0)">
+                      <font size="2px"> 第三节</font>
+                  </td>
+                    <td id="TD2_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD13_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="软件工程 ;教师：邹书蓉;周次： 1-10周;教室：H2102">软件工程 <br>教师：邹书蓉<br>周次： 1-10周<br>教室：H2102</td>
+                    <td id="TD24_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD35_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="软件工程;教师：邹书蓉;周次： 1-8周;教室：H1102;;云计算导论;教师：王铁军;周次： 9-14周;教室：H2103">软件工程<br>教师：邹书蓉<br>周次： 1-8周<br>教室：H1102<br><br>云计算导论<br>教师：王铁军<br>周次： 9-14周<br>教室：H2103</td>
+                    <td id="TD46_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="计算机组成原理A ;教师：刘双虎;周次： 1-14周;教室：H1504">计算机组成原理A <br>教师：刘双虎<br>周次： 1-14周<br>教室：H1504</td>
+                    <td id="TD57_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD68_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgb(238, 255, 0)">
+                      <font size="2px"> 第四节</font>
+                  </td>
+                    <td id="TD3_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    
+                    <td id="TD25_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    
+                    
+                    <td id="TD58_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD69_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgb(51, 187, 0)">
+                      <font size="2px"> 第五节</font>
+                  </td>
+                    <td id="TD4_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="马克思主义基本原理 ;教师：侯莲梅;周次： 1-17周;教室：H2303">马克思主义基本原理 <br>教师：侯莲梅<br>周次： 1-17周<br>教室：H2303</td>
+                    <td id="TD15_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="概率论与数理统计C ;教师：袁勇;周次： 1-12周;教室：H1208">概率论与数理统计C <br>教师：袁勇<br>周次： 1-12周<br>教室：H1208</td>
+                    <td id="TD26_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD37_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="马克思主义基本原理;教师：侯莲梅;周次： 13-17周;教室：H1308;;概率论与数理统计C;教师：袁勇;周次： 1-12周;教室：H1208">马克思主义基本原理<br>教师：侯莲梅<br>周次： 13-17周<br>教室：H1308<br><br>概率论与数理统计C<br>教师：袁勇<br>周次： 1-12周<br>教室：H1208</td>
+                    <td id="TD48_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="形势与政策3 ;教师：陈敏;周次： 5-8周;教室：H2302">形势与政策3 <br>教师：陈敏<br>周次： 5-8周<br>教室：H2302</td>
+                    <td id="TD59_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD70_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgb(51, 187, 0)">
+                      <font size="2px"> 第六节</font>
+                  </td>
+                    
+                    
+                    <td id="TD27_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    
+                    
+                    <td id="TD60_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD71_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgb(51, 187, 0)">
+                      <font size="2px"> 第七节</font>
+                  </td>
+                    <td id="TD6_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="Web前端编程;教师：韩永红;周次： 1-8周;教室：H1101;;计算机图形学;教师：文武;周次： 9-18周;教室：H1207">Web前端编程<br>教师：韩永红<br>周次： 1-8周<br>教室：H1101<br><br>计算机图形学<br>教师：文武<br>周次： 9-18周<br>教室：H1207</td>
+                    <td id="TD17_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="计算机组成原理A ;教师：刘双虎;周次： 1-14周;教室：H1504">计算机组成原理A <br>教师：刘双虎<br>周次： 1-14周<br>教室：H1504</td>
+                    <td id="TD28_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="体育4 ;教师：周雪亚;周次： 1-12周;教室：网球场2">体育4 <br>教师：周雪亚<br>周次： 1-12周<br>教室：网球场2</td>
+                    <td id="TD39_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="软件工程 ;教师：邹书蓉;周次： 9-10周;教室：H1207">软件工程 <br>教师：邹书蓉<br>周次： 9-10周<br>教室：H1207</td>
+                    <td id="TD50_0" style="background-color: rgb(148, 174, 243); font-size: 12px;" rowspan="2" class="infoTitle" title="计算机图形学 ;教师：文武;周次： 9-18周;教室：H1507">计算机图形学 <br>教师：文武<br>周次： 9-18周<br>教室：H1507</td>
+                    <td id="TD61_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD72_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgb(51, 187, 0)">
+                      <font size="2px"> 第八节</font>
+                  </td>
+                    
+                    
+                    
+                    
+                    
+                    <td id="TD62_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD73_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgb(0, 191, 255)">
+                      <font size="2px"> 第九节</font>
+                  </td>
+                    <td id="TD8_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD19_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD30_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD41_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD52_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD63_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD74_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgb(0, 191, 255)">
+                      <font size="2px"> 第十节</font>
+                  </td>
+                    <td id="TD9_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD20_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD31_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD42_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD53_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD64_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD75_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                </tr>
+                <tr>
+                    <td style="background-color:rgb(0, 191, 255)">
+                      <font size="2px"> 第十一节</font>
+                  </td>
+                    <td id="TD10_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD21_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD32_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD43_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD54_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD65_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                    <td id="TD76_0" style="backGround-Color:#ffffff;font-size:12px"></td>
+                </tr>
+              </tbody></table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

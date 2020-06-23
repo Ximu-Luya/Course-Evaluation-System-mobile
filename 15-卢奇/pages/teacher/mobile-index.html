@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>课程评价系统-教师端</title>
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/frame_css.css">
+    <link rel="stylesheet" href="../../css/student/mobile-evaluated.css">
+    <script type="text/javascript" src="../../js/frame_js.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="title_1">课程评价系统</span>
+            <a id="menu" href="../mobile-personalInfo.html"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="page">
+            <div class="navigation">
+                <ul>
+                    <li class="navs" id="selected"><a href="mobile-evaluated.html">负责课程的评教结果</a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>评教分数</th>
+                            <th>课程名称</th>
+                            <th>教学班</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <script>
+                    course_info = [
+                        ['85', '创新、发明与知识产权实务', '计算机181'],
+                        ['87', '创新、发明与知识产权实务', '计算机182'],
+                        ['80', '创新创业教育基础', '计算机181'],
+                        ['85', '创新创业教育基础', '计算机182'],
+                        ['82', '大学物理B', '计算机181'],
+                        ['85', '大学物理B', '计算机182'],
+                        ['90', '大学物理B', '计算机183'],
+                        ['86', '大学物理B', '计算机184'],
+                        ['88', '形势与政策1', '计算机181'],
+                        ['89', '形势与政策1', '计算机182']
+                    ];
+                
+                    for(let i=0; i<course_info.length; i++){
+                        $('tbody').append('<tr>' + 
+                            '<td>' + course_info[i][0] +'</td>' +
+                            '<td>' + course_info[i][1] +'</td>' +
+                            '<td>' + course_info[i][2] +'</td>' +
+                            + '<tr>'
+                        );
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

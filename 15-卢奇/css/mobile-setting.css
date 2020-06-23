@@ -1,0 +1,52 @@
+.label{
+    background: #f2f6f8;
+    font-weight: 400;
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    line-height: 25px;
+    padding: 0 15px;
+    color: #8e8e93;
+}
+.field{
+    position: relative;
+    border-top: 1px solid #eaedf0;
+    padding: 11px 15px 10px;
+    text-align: left;
+    cursor: pointer;
+}
+.field-label{
+    font-size: 14px;
+    color: #8e8e93;
+    display: inline-block;
+    line-height: 18px;
+}
+.field-value{
+    font-size: 14px;
+    color: #4a4a4a;
+    position: absolute;
+    right: 10px;
+    line-height: 18px;
+    display: inline-block;
+}
+.field-value select{
+    height: 25px;
+}
+
+
+#logout{
+    display: inline-block;
+    width: 150px;
+    line-height: 14px;
+    padding: 9px 24px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-image: linear-gradient(to top left, #37ecba 0%, #72afd3 100%);
+    color: #fff;
+}

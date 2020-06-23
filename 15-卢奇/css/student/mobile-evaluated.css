@@ -1,0 +1,27 @@
+.content{
+    overflow: auto;
+}
+table{border-collapse:collapse;}
+table thead th{
+    background-color: rgb(128, 102, 160);
+    color: #fff;
+    border-bottom-width: 0;
+}
+td{color: black;}
+tr, th{
+    border-width: .1rem;
+    border-style: solid;
+    border-color: rgb(128, 102, 160);
+    background-color: blue;
+}
+td, th{
+    padding: 5px 10px;
+    height: 50px;
+    font-size: .875rem;
+    white-space: nowrap;
+}
+table a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: cornflowerblue;
+}
